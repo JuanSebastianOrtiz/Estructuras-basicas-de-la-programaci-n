@@ -8,7 +8,7 @@ if __name__ == '__main__':
 	# desarrollado por :  juan sebastian ortiz ibarra //
 	# fecha 19/02/2023//
 	# version 1.0//
-	# declaración variables//
+	# declaracion variables//
 	a = float()
 	b = float()
 	c = float()
@@ -25,7 +25,6 @@ if __name__ == '__main__':
 	d = 0.0
 	n = ""
 	# captura de datos//
-	# vel final en km/h
 	print("cual es su nombre ")
 	n = input()
 	print("cuanto le pagan por hora")
@@ -35,11 +34,11 @@ if __name__ == '__main__':
 	print("Cuantas horas nocturnas trabajo")
 	c = float(input())
 	# procesos aritmeticos//
-	b = a*b
-	c = a*c*1.40
-	psd = b+c
-	pt = psd*0.81
-	d = psd-pt
+	b = a*b #formula horas valor horas nocturnas
+	c = a*c*1.40 # valor horas extras
+	psd = b+c    # formula salario bruto 
+	pt = psd*0.81  #formula pago total con el impuesto aplicado 
+	d = psd-pt  # formula descuento 
 	# impresion de resultados //
 	print("trabajador con el nombre: ",n)
 	print("el sueldo sin descuentos es: ",psd)

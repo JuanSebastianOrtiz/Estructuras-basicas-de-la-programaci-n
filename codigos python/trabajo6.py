@@ -1,14 +1,10 @@
-# Este codigo ha sido generado por el modulo psexport 20180802-w32 de PSeInt.
-# Es posible que el codigo generado no sea completamente correcto. Si encuentra
-# errores por favor reportelos en el foro (http://pseint.sourceforge.net).
-
 
 if __name__ == '__main__':
 	# programa que calcula la nota final de 3 parciales teniendo en cuenta sus porcentajes y especificando si aprobo o reprobo teniendo en cuenta la nota final y inasistencias //
 	# desarrollado por : juan sebastian ortiz ibarra //
 	# fecha 19/02/2023//
 	# version 1.0//
-	# Definición de variables//
+	# Definicion de variables//
 	n1 = float()
 	n2 = float()
 	n3 = float()
@@ -39,20 +35,20 @@ if __name__ == '__main__':
 	n3 = float(input())
 	print("    digite porcentaje de la primera nota sin el simbolo %: ")
 	p1 = float(input())
-	print("    digite porcentaje de la segunda nota sin el simbolo %: ")
+	print("    digite porcentaje de la segunda nota sin el simbolo %: ")  
 	p2 = float(input())
 	print("    digite porcentaje de la tercera nota sin el simbolo %: ")
 	p3 = float(input())
 	# operaciones aritmeticas//
 	p1 = p1/100
-	p2 = p2/100
+	p2 = p2/100  # se divide entre 100 para dar como resultado los porcentajes para seguir operando 
 	p3 = p3/100
-	nf = (n1*p1)+(n2*p2)+(n3*p3)
+	nf = (n1*p1)+(n2*p2)+(n3*p3) # formula de la nota final 
 	# condicionales y impresion de resultados //
 	print("Digite numero de inasistencias")
 	i = float(input())
 	if i<12:
-		print("asistencias validas")
+		print("asistencias validas")    #se pierde por inasistencias => a 12 o por nota como se puede ver  en los condicionals por el contrario se gana 
 	else:
 		print("pierde por inasistencias")
 	if nf>=3.5 and i<12:
